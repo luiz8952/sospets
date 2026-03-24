@@ -4,35 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ID Pet - Frederico</title>
-    <!-- Importando uma fonte moderna -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #27ae60; /* Cor dos botões */
-            --alert: #e74c3c;   /* Cor de alerta médico */
+            --primary: #27ae60; 
+            --alert: #e74c3c;   
             --bg: #f8f9fa;
         }
         body { font-family: 'Poppins', sans-serif; background: var(--bg); margin: 0; padding: 20px; display: flex; justify-content: center; }
         .card { background: white; width: 100%; max-width: 400px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); overflow: hidden; }
         
-        /* Topo Colorido */
+        /* Ajuste de cores no Topo */
         .header { background: #2c3e50; padding: 30px 20px; text-align: center; color: white; }
         .pet-icon { font-size: 50px; background: white; width: 80px; height: 80px; line-height: 80px; border-radius: 50%; margin: 0 auto 10px; display: block; }
         
-        .content { padding: 20px; text-align: center; }
-        h1 { margin: 0; color: #2c3e50; font-size: 28px; text-transform: uppercase; }
-        .breed { color: #7f8c8d; font-size: 14px; margin-bottom: 20px; display: block; }
+        /* Cor do nome ajustada para Branco para aparecer no fundo azul */
+        .header h1 { margin: 0; color: #ffffff; font-size: 28px; text-transform: uppercase; }
+        .header .breed { color: #bdc3c7; font-size: 14px; margin-bottom: 0; display: block; }
 
-        /* Botões */
+        .content { padding: 20px; text-align: center; }
+
         .btn { display: flex; align-items: center; justify-content: center; background: var(--primary); color: white; padding: 16px; margin: 10px 0; border-radius: 15px; text-decoration: none; font-weight: bold; font-size: 16px; transition: 0.3s; }
         .btn-wa { background: #25d366; }
         
-        /* Seção de Alerta Médico */
         .medical-alert { background: #fff5f5; border: 2px solid var(--alert); border-radius: 15px; padding: 15px; margin: 20px 0; text-align: left; }
         .medical-alert h3 { margin: 0 0 5px; color: var(--alert); font-size: 16px; }
         .medical-alert p { margin: 0; font-size: 13px; color: #444; line-height: 1.5; }
 
-        /* Informações Extras */
         .details { text-align: left; font-size: 13px; color: #666; background: #f1f1f1; padding: 15px; border-radius: 15px; }
         .footer-brand { margin-top: 20px; font-size: 10px; color: #bbb; text-transform: uppercase; letter-spacing: 1px; }
     </style>
@@ -47,11 +45,10 @@
     </div>
 
     <div class="content">
-        <!-- BOTÕES DE CONTATO -->
-        <a href="tel:21979951050" class="btn">📞 LIGAR PARA O DONO</a>
-        <a href="https://wa.me/5521979951050?text=Encontrei%20o%20Frederico!" class="btn btn-wa">💬 WHATSAPP</a>
+        <!-- BOTÕES COM NOME DA TUTORA -->
+        <a href="tel:21979951050" class="btn">📞 LIGAR PARA VITTORIA</a>
+        <a href="https://wa.me/5521979951050?text=Encontrei%20o%20Frederico!" class="btn btn-wa">💬 WHATSAPP DA VITTORIA</a>
 
-        <!-- ALERTA MÉDICO (Remova se o pet for saudável) -->
         <div class="medical-alert">
             <h3>⚠️ ATENÇÃO / SAÚDE</h3>
             <p>
@@ -61,7 +58,6 @@
             </p>
         </div>
 
-        <!-- OUTROS DADOS -->
         <div class="details">
             <strong>💊 MEDICAÇÕES:</strong><br>
             4 Colírios (Tacrolimus, Xalatan, Tobrex, Simbriza)<br>
