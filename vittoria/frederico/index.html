@@ -14,16 +14,24 @@
         body { font-family: 'Poppins', sans-serif; background: var(--bg); margin: 0; padding: 20px; display: flex; justify-content: center; }
         .card { background: white; width: 100%; max-width: 400px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); overflow: hidden; }
         
-        /* Ajuste de cores no Topo */
         .header { background: #2c3e50; padding: 30px 20px; text-align: center; color: white; }
-        .pet-icon { font-size: 50px; background: white; width: 80px; height: 80px; line-height: 80px; border-radius: 50%; margin: 0 auto 10px; display: block; }
         
-        /* Cor do nome ajustada para Branco para aparecer no fundo azul */
+        /* ESTILO DA FOTO REAL */
+        .pet-photo { 
+            width: 110px; 
+            height: 110px; 
+            border-radius: 50%; 
+            object-fit: cover; /* Isso impede que a foto fique esticada */
+            border: 4px solid white; 
+            margin: 0 auto 15px; 
+            display: block;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        
         .header h1 { margin: 0; color: #ffffff; font-size: 28px; text-transform: uppercase; }
         .header .breed { color: #bdc3c7; font-size: 14px; margin-bottom: 0; display: block; }
 
         .content { padding: 20px; text-align: center; }
-
         .btn { display: flex; align-items: center; justify-content: center; background: var(--primary); color: white; padding: 16px; margin: 10px 0; border-radius: 15px; text-decoration: none; font-weight: bold; font-size: 16px; transition: 0.3s; }
         .btn-wa { background: #25d366; }
         
@@ -39,13 +47,14 @@
 
 <div class="card">
     <div class="header">
-        <span class="pet-icon">🐶</span>
+        <!-- AQUI CHAMA A FOTO QUE VOCÊ SUBIU -->
+        <img src="foto.jpg" alt="Foto do Frederico" class="pet-photo">
+        
         <h1>Frederico</h1>
         <span class="breed">SRD | Branco | Nasc. 2009</span>
     </div>
 
     <div class="content">
-        <!-- BOTÕES COM NOME DA TUTORA -->
         <a href="tel:21979951050" class="btn">📞 LIGAR PARA VITTORIA</a>
         <a href="https://wa.me/5521979951050?text=Encontrei%20o%20Frederico!" class="btn btn-wa">💬 WHATSAPP DA VITTORIA</a>
 
@@ -66,7 +75,7 @@
             Rua Barão de Mesquita, 891/907 - Tijuca
         </div>
 
-        <div class="footer-brand">3D PIXEL RJ</div>
+        <div class="footer-brand">ID PET - NFC TECHNOLOGY</div>
     </div>
 </div>
 
