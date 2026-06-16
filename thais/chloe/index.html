@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Pet - Chloe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #27ae60; 
+            --alert: #e74c3c;   
+            --bg: #f8f9fa;
+        }
+        body { font-family: 'Poppins', sans-serif; background: var(--bg); margin: 0; padding: 10px; display: flex; justify-content: center; }
+        .card { background: white; width: 100%; max-width: 400px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); overflow: hidden; }
+        .header { background: #2c3e50; padding: 20px 15px; text-align: center; color: white; }
+        
+        .pet-photo { 
+            width: 120px; 
+            height: 120px; 
+            border-radius: 50%; 
+            border: 3px solid white; 
+            margin: 0 auto 10px; 
+            display: block;
+            /* AJUSTE AQUI: */
+            object-fit: cover; 
+            object-position: top; /* Isso faz aparecer a cabeça e corta o pé da foto */
+        }
+        
+        .header h1 { margin: 0; color: #ffffff; font-size: 24px; text-transform: uppercase; }
+        .header .breed { color: #bdc3c7; font-size: 13px; display: block; }
+        .content { padding: 15px; text-align: center; }
+        .btn { display: flex; align-items: center; justify-content: center; background: var(--primary); color: white; padding: 14px; margin: 8px 0; border-radius: 12px; text-decoration: none; font-weight: bold; font-size: 15px; }
+        .btn-wa { background: #25d366; }
+        .medical-alert { background: #fff5f5; border: 2px solid var(--alert); border-radius: 12px; padding: 12px; margin: 10px 0; text-align: left; }
+        .medical-alert h3 { margin: 0 0 3px; color: var(--alert); font-size: 15px; }
+        .medical-alert p { margin: 0; font-size: 12px; color: #444; line-height: 1.4; }
+        .details { text-align: left; font-size: 12px; color: #666; background: #f1f1f1; padding: 12px; border-radius: 12px; margin-top: 10px; }
+        .footer-brand { margin-top: 12px; font-size: 9px; color: #bbb; text-transform: uppercase; letter-spacing: 1px; padding-bottom: 5px; }
+    </style>
+</head>
+<body>
 
+<div class="card">
+    <div class="header">
+        <img src="foto.jpeg" alt="Foto da Chloe" class="pet-photo">
+        <h1>Juan</h1>
+        <span class="breed">Spitz Alemão | Bege | Nasc. 2023</span>
+    </div>
+
+    <div class="content">
+        <a href="tel:21989295062" class="btn">📞 LIGAR PARA THAIS</a>
+        <a href="https://wa.me/5521979951050?text=Encontrei%20o%20Chloe!" class="btn btn-wa">💬 WHATSAPP DA THAIS</a>
+
+        <div class="medical-alert">
+            <h3>⚠️ ATENÇÃO / SAÚDE</h3>
+            <p>
+                • Vacinas em dia
+            </p>
+        </div>
+
+        <div class="details">
+            <strong>💊 MEDICAÇÕES:</strong><br>
+            Sem medicações regulares
+            <strong>📍 ENDEREÇO:</strong><br>
+            Rua ...
+        </div>
+
+        <div class="footer-brand">Pixel 3d RJ - NFC TECHNOLOGY</div>
+    </div>
+</div>
+
+</body>
+</html>
